@@ -1,0 +1,10 @@
+<!--wxml编写小程序的骨架文件-->
+<!--<div>-->
+<!--容器，风格-->
+<view class='container'>
+  <image class='user' src='/images/avatar/3.png'></image>
+  <text class='user-name'>Hello,小熊</text>
+  <view class='moto-container' bindtap='onTap'>
+    <text class='moto'>开启小程序之旅</text>
+  </view>
+</view>

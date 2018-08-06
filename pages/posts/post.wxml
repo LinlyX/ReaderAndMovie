@@ -1,0 +1,20 @@
+<import src="post-item/post-item-template.wxml" />
+<view>
+  <swiper catchtap='onSwiper' indicator-dots='true' autoplay='true'  circular='true' interval='5000'>
+    <swiper-item>
+      <image src='/images/wx.png' data-post-id='3'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/vr.png' data-post-id='4'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/iqiyi.png' data-post-id='5'></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{post_key}}" wx:key="unique">
+    <!--template-->
+    <view catchtap="onPostTap" data-post-id="{{item.postId}}"><!--自定义属性，将数据绑定到元素上-->
+      <template is="post-item" data="{{...item}}" /><!--es6展开符，使模板中的值可以直接使用，而无需加item.-->
+    </view>
+  </block>
+</view>

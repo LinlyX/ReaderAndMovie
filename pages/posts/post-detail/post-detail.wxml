@@ -1,0 +1,22 @@
+<view class='container'>
+  <image class="head-image" src='{{isPlayingMusic?postData.music.coverImg:postData.headImgSrc}}'></image><!--非组合元素可以不用view去包裹-->
+  <image class="audio" catchtap='onMusic' src="{{isPlayingMusic? '/images/music/music-stop.png': '/images/music/music-start.png'}}"></image>
+  <view class="author-date">
+    <image class="avatar" src='{{postData.avatar}}'></image>
+    <text class="author"t>{{postData.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{postData.dateTime}}</text>
+  </view>
+  <text class="title">{{postData.title}}</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image wx:if="{{collected}}" catchtap='onCollectionTap' src='/images/icon/collection.png'></image>
+      <image wx:else catchtap='onCollectionTap' src='/images/icon/collection-anti.png'></image>
+      <image catchtap='onShareTap' src='/images/icon/share.png' class="share-img" ></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <view class="detail">
+    {{postData.detail}}
+  </view>
+</view>

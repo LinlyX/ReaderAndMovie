@@ -1,0 +1,65 @@
+@import "../post-bar/bar-template.wxss";
+.post-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.post-author-date{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.post-author{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.post-date{
+  font-size: 26rpx;
+  color: grey;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+.post-title{
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.post-image{
+  width: 100%;
+  height: 340rpx;
+  margin-left: 16px;
+  margin: auto 0;
+  margin-bottom: 15px;
+}
+.post-text{
+  font-size: 28rpx;
+  color: #666;
+  letter-spacing: 2rpx;
+  margin-bottom: 20rpx;
+}
+.post-like{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.post-like-img{
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 16rpx;
+  margin-right: 12rpx
+}
+.post-like-font{
+  font-size: 24rpx;
+  margin-right: 32rpx;
+}

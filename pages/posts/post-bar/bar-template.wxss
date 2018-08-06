@@ -1,0 +1,17 @@
+.post-like{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+.post-like-img{
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 16rpx;
+  margin-right: 12rpx
+}
+.post-like-font{
+  font-size: 24rpx;
+  margin-right: 32rpx;
+}
